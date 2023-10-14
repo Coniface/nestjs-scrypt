@@ -1,6 +1,6 @@
 {
   "name": "@coniface/nestjs-scrypt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NestJS module providing a wrapper around NodeJS crypto.scrypt.",
   "keywords": [
     "nest",
