@@ -17,7 +17,7 @@ import {
   MAX_MAXMEMFRAC,
   MIN_MAXMEM,
 } from './scrypt.constants';
-import { MODULE_OPTIONS_TOKEN } from './scrypt.module-definition';
+import { SCRYPT_OPTIONS_TOKEN } from './scrypt.module-definition';
 import { ScryptModuleOptions } from './scrypt.module-options';
 import { ScryptModuleParams } from './scrypt.module-params';
 import { ScryptNodeParams, ScryptParams } from './scrypt.params';
@@ -28,7 +28,7 @@ export class ScryptService implements OnModuleInit {
   private readonly params: ScryptModuleParams;
 
   constructor(
-    @Inject(MODULE_OPTIONS_TOKEN)
+    @Inject(SCRYPT_OPTIONS_TOKEN)
     plainOptions: ScryptModuleOptions,
   ) {
     this.params = plainToClass(ScryptModuleParams, plainOptions);

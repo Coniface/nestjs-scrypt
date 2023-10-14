@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ConfigurableModuleClass } from './scrypt.module-definition';
+import { ConfigurableScryptModule } from './scrypt.module-definition';
 import { ScryptService } from './scrypt.service';
 
 /**
@@ -9,4 +9,4 @@ import { ScryptService } from './scrypt.service';
   providers: [ScryptService],
   exports: [ScryptService],
 })
-export class ScryptModule extends ConfigurableModuleClass {}
+export class ScryptModule extends ConfigurableScryptModule {}
